@@ -1,0 +1,17 @@
+<script>
+
+let AB = parseFloat(prompt("Entrez la longueur de AB :"));
+let AC = parseFloat(prompt("Entrez la longueur de AC :"));
+
+if (isNaN(AB) || isNaN(AC) || AB <= 0 || AC <= 0) {
+    console.log("Veuillez entrer des valeurs numériques valides et positives.");
+} else {
+    
+    let BC = Math.sqrt(Math.pow(AB, 2) + Math.pow(AC, 2));
+    
+   
+    console.log(`La longueur de l'hypoténuse BC est approximativement : ${BC.toFixed(2)}`);
+}
+
+
+</script>

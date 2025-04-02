@@ -1,0 +1,36 @@
+<body>
+   
+    <h2>Les événements en HTML/JavaScript : Un petit formulaire</h2>
+  
+    
+   
+    Donnez un entier entre 1 et 4, je vais vous le traduire en anglais :
+    <FORM>
+        <input type="text" name="Valeur_Reponse" id="Id_Reponse" value="" />
+        <input type="button" value="Valider" onclick="MaFonction();" />
+    </FORM>
+    
+   
+    <p id='resultat'>S’écrit en anglais :</p>
+    
+    
+    <script>
+    function MaFonction()
+    {
+        var reponse = document.getElementById("Id_Reponse").value; 
+    
+        if (reponse=='1')
+            {document.getElementById('resultat').innerHTML= 'one';}
+        else if (reponse=='2')
+            {document.getElementById('resultat').innerHTML= 'two';}
+        else if (reponse=='3')
+            {document.getElementById('resultat').innerHTML= 'three';}
+        else if (reponse=='4')
+            {document.getElementById('resultat').innerHTML= 'four';}
+        else
+            {document.getElementById('resultat').innerHTML= 'Je ne comprends pas';}
+    }
+    </script>
+    
+    </body>
+    

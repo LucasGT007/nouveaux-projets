@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // 1. Demander le nom et afficher un message de bienvenue
+        let nom = prompt("Entrez votre nom :");
+        if (nom) {
+            alert("Bienvenue, " + nom + "!");
+        }
+
+        // 2 & 3. Demander un nombre et afficher son carré
+        let nombre = prompt("Entrez un nombre :");
+        if (!isNaN(nombre) && nombre.trim() !== "") {
+            alert("Le carré de " + nombre + " est " + (nombre * nombre));
+        } else {
+            alert("Erreur : Vous devez entrer un nombre valide.");
+        }
+
+        // 4. Demander deux nombres et afficher la somme
+        let nombre1 = prompt("Entrez le premier nombre :");
+        let nombre2 = prompt("Entrez le deuxième nombre :");
+        if (!isNaN(nombre1) && !isNaN(nombre2) && nombre1.trim() !== "" && nombre2.trim() !== "") {
+            alert("La somme de " + nombre1 + " et " + nombre2 + " est " + (parseFloat(nombre1) + parseFloat(nombre2)));
+        } else {
+            alert("Erreur : Vous devez entrer deux nombres valides.");
+        }
+    </script>
+    <h1>Aimez vous la couleur de ce site?</h1>
+<script>prompt("")</script>
+</body>
+
+</html>
